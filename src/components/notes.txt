@@ -1,0 +1,3 @@
+# notes.txt
+# just putting this here so the components folder isn't empty
+# will delete later maybe
