@@ -1,0 +1,59 @@
+/* traffic light pole and signal styles */
+
+.traffic-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.traffic-pole {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  background: #1f2937;
+  padding: 14px 12px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.light {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  opacity: 0.2;
+  transition: opacity 0.35s ease, box-shadow 0.35s ease;
+}
+
+.red-light {
+  background: #ef4444;
+}
+
+.yellow-light {
+  background: #f59e0b;
+}
+
+.green-light {
+  background: #22c55e;
+}
+
+.light.lit {
+  opacity: 1;
+}
+
+.red-light.lit {
+  box-shadow: 0 0 16px rgba(239, 68, 68, 0.6);
+}
+
+.yellow-light.lit {
+  box-shadow: 0 0 16px rgba(245, 158, 11, 0.6);
+}
+
+.green-light.lit {
+  box-shadow: 0 0 16px rgba(34, 197, 94, 0.6);
+}
+
+.traffic-msg {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}

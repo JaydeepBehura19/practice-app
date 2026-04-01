@@ -1,0 +1,53 @@
+/* input mirror layout */
+
+.mirror-container {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.mirror-output {
+  background: #f7f8fa;
+  border-radius: 8px;
+  padding: 14px;
+  border: 1px solid var(--border);
+  min-height: 60px;
+}
+
+.mirror-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  color: var(--text-secondary);
+}
+
+.mirror-text {
+  font-size: 0.95rem;
+  margin-top: 4px;
+  color: var(--text-primary);
+  word-break: break-word;
+}
+
+.mirror-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.char-count {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.focus-btn {
+  background: var(--accent-light);
+  color: var(--accent);
+  font-size: 0.78rem;
+  padding: 7px 14px;
+}
+
+.focus-btn:hover {
+  background: #dde3fc;
+}

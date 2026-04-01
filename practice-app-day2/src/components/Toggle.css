@@ -1,0 +1,55 @@
+/* toggle pill styles */
+
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.toggle-status {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.status-on {
+  color: #10b981;
+  font-weight: 700;
+}
+
+.status-off {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.toggle-pill {
+  position: relative;
+  width: 52px;
+  height: 28px;
+  border-radius: 50px;
+  border: none;
+  background: #d1d5db;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  padding: 0;
+}
+
+.toggle-pill.active {
+  background: #6366f1;
+}
+
+.toggle-knob {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.toggle-pill.active .toggle-knob {
+  transform: translateX(24px);
+}
