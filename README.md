@@ -1,16 +1,25 @@
 # React Practice
 
-This repository contains my React learning progress organized day-wise.
+This repo contains my day-wise React practice work.
 
 ## Day 1
-- Basic React components
-- JSX and layout structure
+
+Worked on basic components, JSX, and layout structure.
 
 ## Day 2
-- useState, useEffect, useRef
-- Event handling
-- Conditional rendering
-- Lists and keys
-- Basic UI improvements
 
-Each project is kept separate to maintain clarity and track progress.
+Practiced hooks like useState, useEffect, and useRef.
+Also built small interactive components and handled events.
+
+## Day 3
+
+Focused on styling using CSS Modules and built a simple theme toggle.
+Tried to keep styles scoped and layout clean.
+
+## Structure
+
+* Root (src/) → Day 1
+* practice-app-day2/ → Day 2
+* practice-app-day3/ → Day 3
+
+Each day is kept separate to track progress clearly.
