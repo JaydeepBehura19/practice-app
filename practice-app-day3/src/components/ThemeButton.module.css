@@ -1,0 +1,47 @@
+/* base holds everything common — variants just swap colors */
+
+.base {
+  width: 100%;
+  padding: 11px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.84rem;
+  font-weight: 550;
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease,
+              box-shadow 0.25s ease, transform 0.2s ease;
+  letter-spacing: 0.02em;
+  outline: none;
+}
+
+/* // added subtle hover lift to improve interaction feel */
+.base:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.2);
+}
+
+/* // removed lift when clicked for a grounded active state */
+.base:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 4px rgba(99, 102, 241, 0.1);
+}
+
+/* light — primary state uses a soft indigo tone */
+.light {
+  background-color: #6366f1;
+  color: #ffffff;
+}
+
+.light:hover {
+  background-color: #4f46e5;
+}
+
+/* dark — stronger contrast for the toggled state */
+.dark {
+  background-color: #1e1b4b;
+  color: #e0e7ff;
+}
+
+.dark:hover {
+  background-color: #312e81;
+}

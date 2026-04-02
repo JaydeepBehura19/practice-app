@@ -1,0 +1,21 @@
+/* reset and base — kept this minimal, just enough to start clean */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* swapped flat background for a soft gradient */
+/* // replaced flat background with a soft gradient to add subtle depth */
+body {
+  background: linear-gradient(180deg, #f5f6f8 0%, #eef1f5 100%);
+  min-height: 100vh;
+  color: #333;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}

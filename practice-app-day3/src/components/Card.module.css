@@ -1,0 +1,38 @@
+/* used module css to keep styles isolated per card */
+
+.container {
+  background: #ffffff;
+  border: 1px solid #e6e8ec;
+  border-radius: 12px;
+  padding: 22px 24px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* // added subtle hover lift to improve interaction feel */
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* // adjusted middle card slightly to avoid rigid grid layout */
+.featured {
+  padding: 24px 28px;
+  margin: 0 -2px;
+}
+
+.title {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 7px 0;
+  letter-spacing: -0.01em;
+}
+
+/* muted the text so titles stand out more */
+.description {
+  font-size: 0.84rem;
+  color: #6d7a87;
+  line-height: 1.52;
+  margin: 0;
+}
